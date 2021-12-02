@@ -71,6 +71,7 @@ class _HomePageState extends State<HomePage> {
               Expanded(
                 child: Container(
                   width: MediaQuery.of(context).size.width,
+
                   decoration: BoxDecoration(
                     color: Colors.grey[200],
                     borderRadius: BorderRadius.vertical(
@@ -107,7 +108,8 @@ class _HomePageState extends State<HomePage> {
                             itemBuilder: (context,index){
                               return cards[index];
                             }),
-                      )
+                      ),
+                      BottomBar(),
                     ],
                   ),
                 ),
@@ -115,7 +117,7 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
 
-            BottomBar(),
+            //BottomBar(),
 
 
           ]
